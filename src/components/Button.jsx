@@ -1,7 +1,7 @@
 import React from "react";
 import '../styles/Button.css';
 
-export default props => {
+const Button = props => {
     return (
         <button
         onClick={() => props.click && props.click(props.label)} 
@@ -15,3 +15,5 @@ export default props => {
         </button>
     );
 };
+
+export default Button;
